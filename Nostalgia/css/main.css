@@ -1,0 +1,44 @@
+body{
+	background-color: rgb(153, 153, 255);
+	background-image: url(../img/background-about.jpg);
+}
+
+h1{
+	
+	color: rgb(255, 153, 153);
+}
+
+#wrapper {
+	padding: 0 5%;
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+li {
+	color: rgb(153, 255, 255);	
+	/*
+	color
+		keywords -> blue, red, tomato, rebeccapurple
+		rgb -> 0-255 
+			rgb(255,0,0)
+		0-9 & A-F
+			#ff0000
+			  R  G  B
+			if all three pairs are identical, can do #f00
+	*/
+		
+		/*list-style-type: square;*/
+}
+
+nav li{
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+/***Page:About***/
+
+.intro > img {
+	display: block;
+	width: 75%;
+	margin: 0 auto;
+}
