@@ -1,0 +1,88 @@
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Laila' rel='stylesheet'>
+<link rel="stylesheet" href="css/main-style.css" />
+
+<title>
+	Why Jackie Hu
+</title>
+</head>
+<body>
+<div id="header">
+<h1> Jackie Hu's Portfolio </h1>
+</div>
+<div id="container">
+	<div id = "about">
+		<h2>About</h2>
+			<p>I am a Sophomore majoring in CS at Brigham Young University in Provo, Utah. 
+			I love singing, dancing, and playing the piano. I also love taking Ballroom Dance 
+			and Latin Dance classes at BYU.</p>
+			<p>I come from Guangzhou, China. My parents spoke Mandarin with me growing up, but 
+			I can also speak Cantonese because I grew up in Guangzhou, or Canton, which Cantonese
+			was named after. </p>
+			<p>I went to high school in central Indiana. Indiana is a great place and stored lots 
+			of my great memories.</p>
+			<p>I want to live in the Greater Seattle area after graduating from college. Here is a picture of 
+			me with my good friend Celeste in downtown Seattle.</p>
+			<img src="img/me-cbecker.jpg" alt="Picture of Celeste and I in downtown Seattle" height="220" width="320">
+	</div>
+	<div id = "projects">
+		<h2>Projects</h2>
+				<h3>Project 1</h3>
+				<p><a href="Mapbox_database_WORKED/index.html">Click me!</a></p>
+				<h3>Project 2</h3>
+				<p><a href="Nostalgia/about.html">Click me!</a></p>
+				<h3>Project 3</h3>
+				<p><a href="barn/mobileTemplate-2.html">Click me!</a></p>
+	</div>
+	<div id = "work">
+		<h2>Work Experience</h2>
+			<ul>
+				<h3><li>Current</li></h3>
+					<p>I just got hired as a web programmer at the Harold B. Lee Library. I had no prior web programming experience.</p>
+				<h3><li>Past</li></h3>
+					<p>I was a developer apprentice this past summer at Expedia, Inc. Enterprise Data Engineering - Business Intelligence and Global Visualization team. </p>
+			</ul>
+	</div>
+	<div id = "links">
+		<h2>Links</h2>
+			<h3>Caution: content in these links is under construction. </h3>
+			<ol>
+				<li><a href="https://www.whyjackiehu.com">My Website</a></li>
+				<li><a href="https://github.com/yjwho">My GitHub</a></li>
+				<li><a href="https://www.linkedin.com/in/jackie-h-779004104/">My LinkedIn</a></li>
+			</ol>
+	</div>
+	<div id = "fun-stuff">
+		<h2>Trying JavaScript</h2>
+			<p>Please input a number between 1 and 10:</p>
+
+			<input id="numb" type="number">
+
+			<button type="button" onclick="myFunction()">Submit</button>
+
+			<p id="demo"></p>
+
+			<script>
+			function myFunction() {
+				var x, text;
+
+				// Get the value of the input field with id="numb"
+				x = document.getElementById("numb").value;
+
+				// If x is Not a Number or less than one or greater than 10
+				if (isNaN(x) || x < 1 || x > 10) {
+					text = "Input not valid";
+				} else {
+					text = "Input OK";
+				}
+				document.getElementById("demo").innerHTML = text;
+			}
+			</script>
+	</div>
+</div>
+
+<div id="footer"> 2017 </div>
+
+</body>
+</html>
