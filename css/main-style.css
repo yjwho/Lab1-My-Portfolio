@@ -1,0 +1,75 @@
+#header {
+	background-image: url(../img/Jackie-0016.jpg);
+	/* background-position: center; */
+	align-content: center;
+	text-align: center;
+	background-size: cover;
+	backgound-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	
+}
+
+#footer{
+	background-color: rgb(153, 153, 255)rgb(153, 153, 255);
+	text-align: center;
+	color: white;
+}
+
+body{
+	background-color: white;
+    font-family: 'Laila';
+	color: rgb(255, 153, 153);
+	
+}
+
+h1{
+	color: rgb(255, 153, 153);
+	font-size:70px;
+	font-weight: bold;
+}
+
+h2{
+	font-size: 40px;
+}
+
+p{
+	color: rgb(153, 153, 255);
+}
+
+#wrapper {
+	padding: 0 5%;
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+li {
+	color: rgb(153, 153, 255);
+	/*
+	color
+		keywords -> blue, red, tomato, rebeccapurple
+		rgb -> 0-255 
+			rgb(255,0,0)
+		0-9 & A-F
+			#ff0000
+			  R  G  B
+			if all three pairs are identical, can do #f00
+	*/
+		
+		/*list-style-type: square;*/
+}
+
+nav li{
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+
+/***Page:About***/
+
+.intro > img {
+	display: block;
+	width: 75%;
+	margin: 0 auto;
+	
+}
