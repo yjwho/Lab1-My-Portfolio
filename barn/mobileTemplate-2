@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+</head>
+    <body style = "background: #ccffff">
+        <style>
+ul {
+    width: 100%;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    float: left;
+    width: 7em;
+    text-decoration: none;
+    color: white;
+    background-color: blanchedalmond;
+    padding: 0.2em 0.6em;
+    border-right: 1px solid white;
+}
+
+a:hover {
+    background-color: azure;
+}
+
+</style>
+<body>
+     
+
+<!-- Start of first page -->
+<div data-role="page" id="pageone">
+ <div data-role="header">
+ <h1>Old McDonald had a farm</h1>
+ </div>
+ <div data-role="main" class="ui-content">
+ <p>Are you interested in learning about animals? Well, this is the place for you. You can learn all about many different animals and the sounds that they make.This is Old McDonald's farm. Well, he had a farm. Now he has a very profitable choir of singing animals who showcase the different sounds they make.His choir of animals are called the EIEIOs. Perhaps you have heard of them? They are especially popular with children at a single digit age. The EIEIOs only have one song, but they have many lyrics. </p>  
+     <a href="#pagetwo">Learn more!!</a>
+ </div>
+ <div data-role="footer">
+ <h1>EIEIO</h1>
+ </div>
+    <br>
+     <img src="BARN.jpg" height = 400>
+    <img src="https://s-media-cache-ak0.pinimg.com/originals/92/ea/6e/92ea6eff4f7188dc6dbdbc84905f105b.gif" height = 400>
+    </div>
+    
+
+
+<!-- Start of second page -->
+<div data-role="page" id="pagetwo">
+    <div data-role="header">
+        <h1>And on that farm he had a</h1>
+    </div>
+    <div data-role="main" class="ui-content">
+        <p>Animals are different and make many different sounds? What is your favorite animal? Really? Well, here are some other animals where you can learn more about the sounds that they make. Remember that song that Old McDonald's animals are famous for? The EIEIOs are proud to present some of their signature verses here today. These infamous animals have traveled far and wide to perform here today. Choose the animal that you want to hear from and be prepared for a surprise to work.</p>
+         <a href="#pageone">Homepage</a>
+     </div>
+    <form action = "action_page.php">
+        <select id = "animals">
+          <option value = "Eat more chicken!">Cow</option>
+          <option value="Hi, my name is Billy! X^D">Goat</option>
+          <option value="Woah, I'm a talking donkey">Donkey</option>
+          <option value="I'm afraid of bacon...">Pig</option>
+         </select>
+       <button onclick = "myFunction()" >Submit</button>
+          </form>
+   
+    <script>
+        function myFunction() { 
+                alert($('#animals').val());
+            
+                var result = $('#animals').val();
+                if (result == "I'm afraid of bacon...")
+                    document.getElementById("imageDisplay").src = "oink.png";
+                if (result == "Eat more chicken!")
+                    document.getElementById("imageDisplay").src = "http://i.imgur.com/w1Rct3p.jpg";
+                if (result == "Hi, my name is Billy! X^D")
+                    document.getElementById("imageDisplay").src = "goat.jpg";
+                if (result == "Woah, I'm a talking donkey")
+                    document.getElementById("imageDisplay").src = "donkey.jpg";
+                
+        }
+    </script>     
+        <img id=imageDisplay height = 400>
+
+   
+         <div data-role="footer">
+     <h1>EIEIO</h1>
+     </div>
+    </div>
+    
+</body>
+</html>
